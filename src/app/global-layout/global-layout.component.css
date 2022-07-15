@@ -1,0 +1,17 @@
+.logo img {
+  margin: auto !important;
+  width: 150px;
+  height: 60px;
+  float: left;
+}
+.header-menu {
+  line-height: 64px;
+  float: left;
+  margin-left: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
