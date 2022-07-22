@@ -13,13 +13,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GlobalLayoutComponent } from './global-layout/global-layout.component';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { GridComponentComponent } from './grid-component/grid-component.component';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { LineChartComponentComponent } from './cards/line-chart-component/line-chart-component.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    GlobalLayoutComponent
+    GlobalLayoutComponent,
+    GridComponentComponent,
+    LineChartComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,8 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzLayoutModule,
-    NzMenuModule    
+    NzMenuModule,
+    NzGridModule    
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

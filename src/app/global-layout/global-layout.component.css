@@ -1,13 +1,12 @@
 .logo img {
-  margin: auto !important;
-  width: 150px;
+  /* margin: auto !important; */
+  width: 95px;
   height: 60px;
   float: left;
 }
 .header-menu {
-  line-height: 64px;
+  line-height: 60px;
   float: left;
-  margin-left: 10px;
 }
 
 .content {
