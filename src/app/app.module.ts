@@ -15,7 +15,11 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { GridComponentComponent } from './grid-component/grid-component.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
-import { LineChartComponentComponent } from './cards/line-chart-component/line-chart-component.component';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { LineChartCardComponent } from './cards/line-chart-card/line-chart-card.component';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { DoughnutChartCardComponent } from './cards/doughnut-chart-card/doughnut-chart-card.component';
+import { BarChartCardComponent } from './cards/bar-chart-card/bar-chart-card.component';
 
 registerLocaleData(en);
 
@@ -24,7 +28,9 @@ registerLocaleData(en);
     AppComponent,
     GlobalLayoutComponent,
     GridComponentComponent,
-    LineChartComponentComponent
+    LineChartCardComponent,
+    DoughnutChartCardComponent,
+    BarChartCardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,9 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     NzLayoutModule,
     NzMenuModule,
-    NzGridModule    
+    NzGridModule,
+    NzCardModule,
+    NzAvatarModule  
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
