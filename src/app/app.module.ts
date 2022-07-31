@@ -20,6 +20,10 @@ import { LineChartCardComponent } from './cards/line-chart-card/line-chart-card.
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { DoughnutChartCardComponent } from './cards/doughnut-chart-card/doughnut-chart-card.component';
 import { BarChartCardComponent } from './cards/bar-chart-card/bar-chart-card.component';
+import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
+import { DoughnutChartComponent } from './charts/doughnut-chart/doughnut-chart.component';
+import { LineChartComponent } from './charts/line-chart/line-chart.component';
+import { ChartsModule } from "ng2-charts";
 
 registerLocaleData(en);
 
@@ -30,7 +34,10 @@ registerLocaleData(en);
     GridComponentComponent,
     LineChartCardComponent,
     DoughnutChartCardComponent,
-    BarChartCardComponent
+    BarChartCardComponent,
+    BarChartComponent,
+    DoughnutChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,8 @@ registerLocaleData(en);
     NzMenuModule,
     NzGridModule,
     NzCardModule,
-    NzAvatarModule  
+    NzAvatarModule,
+    ChartsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
